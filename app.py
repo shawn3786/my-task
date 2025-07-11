@@ -42,23 +42,5 @@ elif st.session_state.page == "menu":
             st.button("⚠️ Check Low Stock")
 
 
-    st.title("👋 Welcome to Inventory App")
-    st.write("Tap the image to continue...")
-
-    # HTML image wrapped in a form to capture the click
-    st.markdown("""
-        <form action="" method="post">
-            <button type="submit" name="go" style="border:none; background:none;">
-                <img src="https://raw.githubusercontent.com/vindinvv/inventory-app/main/images/welcome.jpg"
-                     style="width:100%; border-radius:10px;" alt="Welcome">
-            </button>
-        </form>
-    """, unsafe_allow_html=True)
-
-    # If the image is clicked, Streamlit will rerun, and we set state
-    if "go" in st.experimental_get_query_params():
-        st.session_state.page = "menu"
-        st.rerun()
-
 
 
