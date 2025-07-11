@@ -5,7 +5,7 @@ image_path = "wellcome.jpg"
 img = Image.open(image_path).convert("RGBA")  # Add alpha channel
 draw = ImageDraw.Draw(img)
 
-font = ImageFont.load_default()
+font = ImageFont.truetype(size = 60)
 text = "Welcome to Inventory App"
 text_position = (130, 30)  # (x, y)
 
