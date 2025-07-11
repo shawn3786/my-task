@@ -17,8 +17,10 @@ if st.session_state.page == "welcome":
             
     draw.text(text_position, text, fill="black", font=font)
     st.image(img, caption="Let's get started!", use_column_width=True)
+    col1, col2, col3 = st.columns([1, 2, 1])
+
     with col1:
-        st.write("")  # Empty
+        st.write("")  
 
     with col2:
         if st.button("👉 Click to Continue"):
@@ -26,7 +28,7 @@ if st.session_state.page == "welcome":
             st.rerun()
 
     with col3:
-        st.write("")  # Empty
+        st.write("")  
 elif st.session_state.page == "menu":
         st.title("📋 What would you like to do?")
 
