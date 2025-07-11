@@ -27,9 +27,10 @@ if st.session_state.page == "welcome":
             </button>
         </form>
     """, unsafe_allow_html=True)
-    if "go" in st.experimental_get_query_params():
-        st.session_state.page = "menu"
-        st.rerun()
+    if "go" in st.query_params:
+    st.session_state.page = "menu"
+    st.rerun()
+
 elif st.session_state.page == "menu":
         st.title("📋 What would you like to do?")
 
