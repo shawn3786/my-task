@@ -13,21 +13,11 @@ if st.session_state.page == "welcome":
              
     font = ImageFont.load_default()
     text =  str(st.title("Welcome to Inventory App"))
-    text2 = str(st.write("Tap the image to continue..."))
     text_position = (200, 30)  
-    text2_postion = (180,480)
             
     draw.text(text_position, text, fill="black", font=font)
-    draw.text(text_position, text2, fill="black", font=font)
-    st.markdown("""
-        <form action="" method="post">
-            <button type="submit" name="go" style="border:none; background:none;">
-                <img src="https://raw.githubusercontent.com/vindinvv/inventory-app/main/images/welcome.jpg"
-                     style="width:100%; border-radius:10px;" alt="Welcome">
-            </button>
-        </form>
-    """, unsafe_allow_html=True)
-    if "go" in st.query_params:
+    st.image(img, caption="Let's get started!", use_column_width=True)
+    if st.button("👉 Click to Continue"):
         st.session_state.page = "menu"
         st.rerun()
 
