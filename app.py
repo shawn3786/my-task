@@ -16,8 +16,7 @@ if st.session_state.page == "welcome":
             
     draw.text(text_position, text, fill="black", font=font)
     st.image(img, use_column_width=True)
-
-     if st.button("👉 Click to Continue"):
+elif st.button("👉 Click to Continue"):
         st.session_state.page = "menu"   
 
         st.title("📋 What would you like to do?")
