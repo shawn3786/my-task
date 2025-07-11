@@ -28,8 +28,8 @@ if st.session_state.page == "welcome":
         </form>
     """, unsafe_allow_html=True)
     if "go" in st.query_params:
-    st.session_state.page = "menu"
-    st.rerun()
+        st.session_state.page = "menu"
+        st.rerun()
 
 elif st.session_state.page == "menu":
         st.title("📋 What would you like to do?")
