@@ -10,7 +10,7 @@ def go_to_menu():
     
     font = ImageFont.load_default()
     text = "Welcome to Inventory App"
-    text_position = (200, 30)  # (x, y)
+    text_position = (200, 30)  
     
     draw.text(text_position, text, fill="black", font=font)
     st.image(img, use_column_width=True)
