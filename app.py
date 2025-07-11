@@ -18,7 +18,7 @@ if st.session_state.page == "welcome":
     text2_postion = (180,480)
             
     draw.text(text_position, text, fill="black", font=font)
-    draw.text2(text_position, text, fill="black", font=font)
+    draw.text2(text_position, text2, fill="black", font=font)
     st.markdown("""
         <form action="" method="post">
             <button type="submit" name="go" style="border:none; background:none;">
