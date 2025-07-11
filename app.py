@@ -3,10 +3,16 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 import time
 
+
+st.session_state.page = "welcome"
+st.session_state.start_time = time.time()
+def go_to_menu():
+    st.session_state.page = "menu"
+if st.season_state.page == "welcome"
 image_path = "wellcome.jpg"
 img = Image.open(image_path).convert("RGBA")  
 draw = ImageDraw.Draw(img)
-        
+         
 font = ImageFont.load_default()
 text = "Welcome to Inventory App"
 text_position = (200, 30)  
@@ -14,10 +20,7 @@ text_position = (200, 30)
 draw.text(text_position, text, fill="black", font=font)
 st.image(img, use_column_width=True)
 
-def go_to_menu():
-    st.session_state.page = "menu"
-        
-if time.time() - st.session_state.start_time > 3:
+     if time.time() - st.session_state.start_time > 3:
         go_to_menu()
 elif st.session_state.page == "menu":
     st.title("📋 What would you like to do?")
@@ -29,3 +32,6 @@ elif st.session_state.page == "menu":
     with col2:
         st.button("🛒 Make New Order")
         st.button("⚠️ Check Low Stock")
+
+
+
