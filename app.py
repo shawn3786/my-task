@@ -8,7 +8,7 @@ st.session_state.page = "welcome"
 st.session_state.start_time = time.time()
 def go_to_menu():
     st.session_state.page = "menu"
-if st.season_state.page == "welcome"
+if st.season_state.page == "welcome":
 image_path = "wellcome.jpg"
 img = Image.open(image_path).convert("RGBA")  
 draw = ImageDraw.Draw(img)
