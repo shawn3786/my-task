@@ -14,7 +14,7 @@ def go_to_menu():
     
     draw.text(text_position, text, fill="black", font=font)
     st.image(img, use_column_width=True)
-    time.time() - st.session_state.start_time > 3:
+    time.time() - st.session_state.start_time > 3
     go_to_menu()
 
     st.session_state.page == "menu":
