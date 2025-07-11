@@ -22,8 +22,8 @@ if st.session_state.page == "welcome":
 
     with col2:
         if st.button("👉 Click to Continue"):
-        st.session_state.page = "menu"
-        st.rerun()
+            st.session_state.page = "menu"
+            st.rerun()
 
     with col3:
         st.write("")  # Empty
