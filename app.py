@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 import os
-image_path = "welcome.jpg"
+image_path = "wellcome.jpg"
 img = Image.open(image_path).convert("RGBA")  # Add alpha channel
 draw = ImageDraw.Draw(img)
 
