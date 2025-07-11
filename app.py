@@ -17,7 +17,7 @@ def go_to_menu():
     time.time() - st.session_state.start_time > 3
     go_to_menu()
 
-    st.session_state.page == "menu":
+    st.session_state.page == "menu"
     st.title("📋 What would you like to do?")
     col1, col2 = st.columns(2)
 
