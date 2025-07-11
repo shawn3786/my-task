@@ -7,7 +7,7 @@ draw = ImageDraw.Draw(img)
 
 font = ImageFont.load_default()
 text = "Welcome to Inventory App"
-text_position = (30, 30)  # (x, y)
+text_position = (130, 30)  # (x, y)
 
-draw.text(text_position, text, fill="white", font=font)
+draw.text(text_position, text, fill="black", font=font)
 st.image(img, use_column_width=True)
