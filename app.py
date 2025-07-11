@@ -12,8 +12,8 @@ if st.session_state.page == "welcome":
     draw = ImageDraw.Draw(img)
              
     font = ImageFont.load_default()
-    text =  st.title("Welcome to Inventory App")
-    text2 = st.write("Tap the image to continue...")
+    text =  str(st.title("Welcome to Inventory App"))
+    text2 = str(st.write("Tap the image to continue..."))
     text_position = (200, 30)  
     text2_postion = (180,480)
             
