@@ -3,7 +3,7 @@ from PIL import Image
 import os
 
 st.set_page_config(page_title="Inventory App", layout="centered")
-welcome_image_path = "/workspaces/my-task/Images/wellcome.jpg"
+welcome_image_path = "/wellcome.jpg"
 img = Image.open(welcome_image_path)
 st.image(img, caption="Let's get started!", use_column_width=True)
 
