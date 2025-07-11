@@ -20,7 +20,7 @@ if st.session_state.page == "welcome":
     col1, col2, col3 = st.columns([1, 2, 1])
 
     with col1:
-        st.write("")  
+        st.write("       ")  
 
     with col2:
         if st.button("👉 Click to Continue"):
