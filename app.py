@@ -6,7 +6,8 @@ import time
 
 st.session_state.page = "welcome"
 st.session_state.start_time = time.time()
-st.session_state.page = "menu"
+def go_to_menu():
+    st.session_state.page = "menu"
 if st.session_state.page == "welcome":
 
     image_path = "wellcome.jpg"
