@@ -20,7 +20,7 @@ if st.session_state.page == "welcome":
     draw.text(text_position, text, fill="black", font=font)
     st.image(img, use_column_width=True)
 
-    if time.time() - st.session_state.start_time > 3:
+    if time.time() - st.session_state.start_time > 10:
         go_to_menu()
 elif st.session_state.page == "menu":
     st.title("📋 What would you like to do?")
