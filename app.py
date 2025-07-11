@@ -17,7 +17,7 @@ if st.session_state.page == "welcome":
             
     draw.text(text_position, text, fill="black", font=font)
     st.image(img, use_column_width=True)
-     clicked = st.button(" ", key="fullscreen", help="Click anywhere", use_container_width=True)
+    clicked = st.button(" ", key="fullscreen", help="Click anywhere", use_container_width=True)
     if clicked:
         st.session_state.page = "menu"
         st.rerun()
